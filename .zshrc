@@ -83,4 +83,23 @@ bindkey "\033[1~" beginning-of-line
 bindkey "\033[4~" end-of-line
 
 alias ll="ls -al"
+alias ml1="ssh kjc@ml1.postech.ac.kr"
+
+export TERMINAL=st
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ngd/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ngd/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ngd/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ngd/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
